@@ -1,0 +1,6 @@
+#!/bin/bash
+##### 必须存在，禁止删除 ##### begin
+rm -rf /var/lock/subsys/*
+touch /var/lock/subsys/local
+/etc/rc.d/rc 3
+########################### end

@@ -1,0 +1,9 @@
+version: '2'
+services:
+  test:
+    image: centos6:161205
+    privileged: true
+    network_mode: bridge
+    tty: true
+    volumes:
+      - "/lib/modules:/lib/modules:ro"
