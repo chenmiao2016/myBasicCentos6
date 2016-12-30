@@ -1,9 +1,11 @@
 version: '2'
 services:
   test:
-    image: centos6:161205
+    image: base:0.1
+    restart: always
     privileged: true
-    network_mode: bridge
+    network_mode: mybridge
+    container_name: chenmiao
     tty: true
     volumes:
       - "/lib/modules:/lib/modules:ro"
